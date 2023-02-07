@@ -1,13 +1,28 @@
 from flask import Flask, jsonify, request
+# import requests
 
 app = Flask(__name__)
 
+info = {'atencao': 'E necessario que voce insira o nome da cidade que deseja'}
 
-# Consultar(todos)
-@app.route('/time',methods=['GET'])
-def obter_dados():
-    return jsonify()
 
+@app.route('/time', methods=['GET'])
+def info_inicial():
+    return jsonify(info)
+
+
+@app.route('/time/<name>', methods=['GET'])
+def obter_dados_meteorologicos(name):
+    cidade = name
+    return "a cidade é {}".format(cidade)
+    data = requests.get(
+        'https://api.hgbrasil.com/weather?key=SUA-CHAVE&city_name=Campinas,SP')
+
+
+app.run(port=5000, host='localhost', debug=True)
+
+
+'''
 # Consultar(id)
 @app.route('/livros/<int:id>',methods=['GET'])
 def obter_livro_por_id(id):
@@ -38,4 +53,9 @@ def excluir_livro(id):
 
     return jsonify(livros)
 
-app.run(port=5000,host='localhost',debug=True)
+'''
+
+'''@app.route("/", methods=["GET"])
+def index():
+	data = requests.get('https://randomuser.me/api')
+	return data.json()'''
