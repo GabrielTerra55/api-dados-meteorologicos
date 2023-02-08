@@ -17,19 +17,16 @@ def obter_dados_meteorologicos(name):
     data = requests.get(
         'https://api.hgbrasil.com/weather?format=json&key=SUA-CHAVE&city_name={}'.format(cidade))
 
-    print(type(data))
     data = data.json()
     data = data['results']
-    print(data.get("city", 0))
     cidade = {'city': data.get('city'),
               'date': data.get('date'),
               'temp': data.get('temp'),
               'rain': data.get('rain'),
               'humidity': data.get('humidity')
               }
-    print(cidade)
 
     return jsonify(cidade)
 
 
-app.run(port=5000, host='localhost', debug=True)
+app.run(port=5000, host='localhost')
