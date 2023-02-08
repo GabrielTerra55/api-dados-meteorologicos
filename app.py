@@ -22,6 +22,7 @@ def obter_dados_meteorologicos(name):
     data = data['results']
     print(data.get("city", 0))
     cidade = {'city': data.get('city'),
+              'date': data.get('date'),
               'temp': data.get('temp'),
               'rain': data.get('rain'),
               'humidity': data.get('humidity')
