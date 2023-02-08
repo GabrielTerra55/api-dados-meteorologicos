@@ -5,8 +5,8 @@
   
 > biliotecas e frameworks utilizados :
 ```
-  Flask == 2.2.2
-  Requests HTTP Library
+  pip install Flask == 2.2.2
+  pip install Requests
 ```
 > busca por cidade :
   Ex : /time/dourados
