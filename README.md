@@ -3,12 +3,12 @@
 > api rest desenvolvida com intuito de obter informações sobre 'Umidade (em percentual)', 'temperatura' e 'chuva (previsão em mm)'
 > Além da cidade e a data de consulta 
   
-> biliotecas e frameworks utilizados :
+ biliotecas e frameworks utilizados :
 ```
   pip install Flask == 2.2.2
   pip install Requests
 ```
-> busca por cidade :
+ busca por cidade :
   Ex : /time/dourados
     {
         "city": "Dourados, MS",
@@ -18,6 +18,8 @@
         "temp": 23
     }
 
-> os dados meteorológicos são disponibilizados pela 'HG Brasil'   
-> link da aplicação: https://api-rest-meteorologica.onrender.com/time
+Os dados meteorológicos são disponibilizados pela 'HG Brasil'   
+1. link da aplicação: https://api-rest-meteorologica.onrender.com/time
+2. Usanodo o link do deploy e seguindo o exemplo, ficara deste modo:
+  https://api-rest-meteorologica.onrender.com/time/dourados
 
