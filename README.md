@@ -20,6 +20,6 @@
 
 Os dados meteorológicos são disponibilizados pela 'HG Brasil'   
 1. link da aplicação: https://api-rest-meteorologica.onrender.com/time
-2. Usanodo o link do deploy e seguindo o exemplo, ficara deste modo:
+2. Usando o link do deploy e seguindo o exemplo, ficara deste modo:
   https://api-rest-meteorologica.onrender.com/time/dourados
 
