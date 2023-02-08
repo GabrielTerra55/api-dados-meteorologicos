@@ -28,5 +28,5 @@ def obter_dados_meteorologicos(name):
 
     return jsonify(cidade)
 
-
-app.run(port=5000, host='localhost')
+if __name__ == '__main__':
+    app.run()
