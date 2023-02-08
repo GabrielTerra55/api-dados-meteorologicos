@@ -15,7 +15,7 @@ def info_inicial():
 def obter_dados_meteorologicos(name):
     cidade = name
     data = requests.get(
-        'https://api.hgbrasil.com/weather?key=SUA-CHAVE&city_name={}'.format(cidade))
+        'https://api.hgbrasil.com/weather?format=json&key=SUA-CHAVE&city_name={}'.format(cidade))
 
     print(type(data))
     data = data.json()
