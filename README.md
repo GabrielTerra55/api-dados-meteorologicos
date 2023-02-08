@@ -19,3 +19,5 @@
     }
 
 > os dados meteorológicos são disponibilizados pela 'HG Brasil'   
+> link da aplicação: https://api-rest-meteorologica.onrender.com/time
+
