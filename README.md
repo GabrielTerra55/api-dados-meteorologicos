@@ -1,7 +1,8 @@
 <h1> Dados Meteorológicos <h1/>
 
-> api rest desenvolvida com intuito de obter informações sobre 'Umidade (em percentual)', 'temperatura' e 'chuva (previsão em mm)'
+> api rest simples desenvolvida com intuito de obter informações sobre 'Umidade (em percentual)', 'temperatura' e 'chuva (previsão em mm)'
 > Além da cidade e a data de consulta 
+> proposito de testar deploy e funcionalidade
   
  biliotecas e frameworks utilizados :
 ```
