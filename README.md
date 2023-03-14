@@ -2,7 +2,7 @@
 
 > api rest simples desenvolvida com intuito de obter informações sobre 'Umidade (em percentual)', 'temperatura' e 'chuva (previsão em mm)'
 > Além da cidade e a data de consulta 
-> proposito de testar deploy e funcionalidade
+proposito de testar deploy e funcionalidade
   
  biliotecas e frameworks utilizados :
 ```
